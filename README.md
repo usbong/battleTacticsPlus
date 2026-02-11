@@ -1,5 +1,9 @@
 # BATTLE TACTICS PLUS
 
+<img src="https://github.com/usbong/battleTacticsPlus/blob/main/notes/battleTacticsPlusDesignDocument20260211.jpg" width="80%">  
+
+***
+
 This is a work of fiction.
 
 <!--
