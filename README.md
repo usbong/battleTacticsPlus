@@ -1,14 +1,8 @@
-# ITCH.IO Game Off 2023: BATTLE TACTICS
+# BATTLE TACTICS PLUS
 
-The city is under attack! The invaders are being led by an enormous bug who has chosen the cold winter month of December to carry out their assault.
+This is a work of fiction.
 
-Reports from trusted sources reveal that the enemies have disguised themselves to infiltrate our security defense forces.
-
-Eliminate the fakes by identifying them from among our ranks, and defend the city from the invasion!
-
-***
-
-This is a work of fiction created for Game Off 2023 with the theme SCALE.
+<!--
 
 ## PLAY on BROWSER
 
@@ -31,18 +25,13 @@ This is a work of fiction created for Game Off 2023 with the theme SCALE.
 
 </table>
 
-
-
-
 ### ITCH.IO: PROTOTYPES
 
 1) https://masarapmabuhay.itch.io/game-off-2023-prototype
 
 2) https://masarapmabuhay.itch.io/game-off-2023-prototype2
 
-
 3) https://masarapmabuhay.itch.io/game-off-2023-prototype3
-
 
 ## Select Software Development Productivity Tools
 
@@ -54,9 +43,11 @@ This is a work of fiction created for Game Off 2023 with the theme SCALE.
 
 4) https://www.audacityteam.org/
 
+-->
+
 ## Open Source Software License
 
-Copyright 2023 USBONG
+Copyright 2026 USBONG
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
@@ -65,5 +56,5 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 @company: USBONG<br/>
-@author: SYSON, MICHAEL B., et al.<br/>
+@author: SYSON, MICHAEL B.<br/>
 @website address: http://www.usbong.ph<br/>
