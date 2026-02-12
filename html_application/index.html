@@ -1,6 +1,6 @@
 <!--
 /*
-' Copyright 2022~2023 USBONG
+' Copyright 2022~2026 USBONG
 '
 ' Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You ' may obtain a copy of the License at
 '
@@ -11,7 +11,7 @@
 ' @company: USBONG
 ' @author: SYSON, MICHAEL B.
 ' @date created: 20221214
-' @date updated: 20231130; from 20231129
+' @date updated: 20260212; from 20231130
 ' @website: www.usbong.ph
 '
 '
@@ -1940,7 +1940,7 @@ setAnimDelayText.value=iDelayAnimationCountMovementStepMax;
 	//added by Mike, 20231121
 	function executeMouseClickAnimation() {
 		var mouseInputImage = document.getElementById("mouseInputImageId");
-    mouseInputImage.style.visibility="visible";
+		mouseInputImage.style.visibility="visible";
 
 		if (iMouseAnimationDelayCount==iMouseAnimationDelayCountMax) {
 			iMouseAnimationCount=(iMouseAnimationCount+1)%5; //last hidden
@@ -2227,10 +2227,14 @@ setAnimDelayText.value=iDelayAnimationCountMovementStepMax;
 						howToPlayGuideImageFrame2.style.visibility = "hidden";
 									
 						mainImageMonster.style.visibility = "visible";
-						
 						textScoreDiv.style.visibility = "visible";
 					}
 					else {
+					
+				      //edited by Mike, 20260212
+					  initPuzzle();
+
+/*					
 					  if (!bIsBossBattleDone) {					
 						if (!bHasClosedPuzzle) {
 							closePuzzle();
@@ -2273,9 +2277,8 @@ setAnimDelayText.value=iDelayAnimationCountMovementStepMax;
 						setCityExplosionEffectPosition(parseInt(bossBattleBgImage.style.left)+bossBattleBgImage.clientWidth*0.1,parseInt(bossBattleBgImage.style.top)+bossBattleBgImage.clientHeight/3);
 
 						//setCityExplosionEffectPosition(0,parseInt(bossBattleBgImage.style.top)+bossBattleBgImage.clientHeight/5);
-	
-	
 					  }
+*/					  
 					}
 					
 				}
@@ -3302,69 +3305,7 @@ textStatusBackgroundDiv.style.width=iStageMaxWidth*0.75;//23*16;//("The PEST was
 				return;
 			}
 
-/* //removed by Mike, 20231127			
-			//added by Mike, 20231125
-			textScoreDivId.style.color="white";
-			myCanvasTwo.style.visibility="visible";
-*/
-			
-			
-/*    //removed by Mike 20231125
-			var mainImageTile = document.getElementById("mainImageTileImageId");
-
-			var mainImageTileProjectile = document.getElementById("mainImageTileProjectileImageId");
-
-      //added by Mike, 20231125
-      var mainImageMonster = document.getElementById("mainImageMonster0");
-*/
-
-/*	  //removed by Mike, 20231127
-
-			if (!bHasClosedPuzzle) {
-				closePuzzle();
-			}
-*/
-			
-/* //removed by Mike, 20231126
-      var myCanvas = document.getElementById("myCanvasId");
-  		var myCanvasContext = myCanvas.getContext("2d");
-
-      //added by Mike, 20231125; from 20231124
-			myCanvasContext.fillStyle = "#000000"; //black background//stage
-			myCanvasContext.fillRect(0, 0, iStageMaxWidth, iStageMaxHeight);
-*/
-
-/*		//removed by Mike, 20231127; to execute transition function
-			mainImageTile.style.visibility = "visible";
-			mainImageTileTankBody.style.visibility = "visible";
-*/
-
-			/*	//removed by Mike, 20231127; TODO: -add: this
-      //added by Mike, 20231125
-      if (mainImageMonster.style.visibility!="hidden") {
-        mainImageMonster.style.visibility = "visible";
-      }
-*/	  
-
         mainImageMonsterBoss.style.visibility = "visible";
-
-/*	//edited by Mike, 20231129
-      if (mainImageMonsterBoss.style.visibility!="hidden") {
-        mainImageMonsterBoss.style.visibility = "visible";
-      }
-		
-	  //added by Mike, 20231129
-      if (mainImageSoldier.style.visibility!="hidden") {
-*/	  
-/*		
-      }
-*/
-
-/*	//removed by Mike, 20231125; TODO: -fix: at times, slow-moving projectile occurs
-	//added by Mike, 20231125
-	mainImageTileProjectileVelocityY+=1;//8;
-	mainImageTileProjectileVelocityX+=1;//8;
-*/
 
 	//alert("mainImageTileProjectileVelocityY: "+mainImageTileProjectileVelocityY);
 
@@ -5373,19 +5314,24 @@ arrayPuzzleTileCountId[iTileBgCountOfEmptyTile].style.visibility = "hidden";
           if (!bIsPuzzleDone) {
   					verifyIfAllObjectsOfTileTypeDone(iXPos, iYPos);
 
-  					//added by Mike, 20231110
+					//edited by Mike, 20260212; from 20231127
+/*					//TODO: -update: this
   					bIsPuzzleDone = isAutoVerifiedPuzzleDone();
-					
-					//added by Mike, 20231127
+
 					if (bIsPuzzleDone) {
 						if (!bIsExecutingTransition) {
 							resetTransitionEffect();
-							
-							//added by Mike, 20231127
-							var mainImageMonster = document.getElementById("mainImageMonster0");
-							mainImageMonster.style.visibility = "hidden";
+														
+////							//edited by Mike, 20260212							
+////							//added by Mike, 20231127
+////							var mainImageMonster = document.getElementById("mainImageMonster0");
+////							mainImageMonster.style.visibility = "hidden";
+								
+							initPuzzle();
+							bIsPuzzleDone=false;
 						}
-					}					
+					}	
+*/					
           }
 
 
